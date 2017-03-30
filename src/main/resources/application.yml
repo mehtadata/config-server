@@ -3,6 +3,9 @@ server:
 spring:
   cloud: 
     config: 
-      server: 
+      server:
         git:
           uri: https://github.com/mehtadata/config-repository
+          search-paths:
+          - app*
+          
